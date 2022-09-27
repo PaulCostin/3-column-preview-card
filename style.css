@@ -1,0 +1,111 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    background-color: hsl(0, 0%, 95%);
+}
+p{
+    color:hsla(0, 0%, 100%, 0.75);
+    line-height: 25px;
+    width: 200px;
+    font-size: 15px;
+    font-family: Lexend Deca, sans-serif;
+}
+
+#main{
+    margin: 7.5% auto 7%;
+    width: 780px;
+    height: 420px;
+    display: flex;
+}
+.left{
+    width: 260px;
+    background-color: hsl(31, 77%, 52%);
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.left > button{
+    color:hsl(31, 77%, 52%);
+    background-color: hsl(0, 0%, 95%);
+}
+.middle{
+    width: 260px;
+    background-color:hsl(184, 100%, 22%) ;
+}
+.middle > button{
+    color:hsl(184, 100%, 22%);
+    background-color: hsl(0, 0%, 95%);
+}
+
+.right{
+    width: 260px;
+    background-color: hsl(179, 100%, 13%);
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.right > button{
+    color:hsl(179, 100%, 13%);
+    background-color: hsl(0, 0%, 95%);
+}
+
+h1{
+    color: hsl(0, 0%, 95%);
+    font-family: Big Shoulders Display, sans-serif;
+}
+img{
+    margin-top: 40px;
+}
+
+img, h1, p {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+button{
+    font-size: 15px;
+    font-family: Lexend Deca, sans-serif;
+    height: 40px;
+    width: 150px;
+    border-radius: 20px;
+    border: none;
+    margin-top: 40px;
+    margin-left:20px;
+}
+
+button:hover{
+    color:hsl(0, 0%, 95%);
+    background-color: inherit;
+    border: solid white;
+}
+
+@media screen and (max-width:800px){
+   #main{
+    margin: 100px auto;
+    width:350px;
+    flex-wrap: wrap;
+   }
+   p{
+    width: 225px;
+    font-size: 20px;
+   }
+   .left, .middle, .right{
+    width: 100%;
+    margin:0 auto 0;
+    height: 450px;
+   }
+   button{
+    margin-left: 40px;
+   }
+   .left{
+    border-bottom-left-radius:0 ;
+    border-bottom-right-radius:0 ;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+   }
+   .right{
+    border-bottom-left-radius:5px ;
+    border-bottom-right-radius:5px ;
+    border-top-left-radius:0;
+    border-top-right-radius:0;
+   }
+
+}
